@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Bank landing page</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="shortcut icon"
+      href="./img/favicon-32x32.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body class="font-sans text-db-primary-dark antialiased">
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
+      <nav
+        class="container mx-auto px-6 lg:px-12 h-20 flex items-center justify-between"
+      >
+        <a href="/" class="z-50">
+          <div class="text-2xl font-bold flex items-center">
+             <img src="./img/logo-dark.svg" alt="">
+          </div>
+        </a>
+
+        <div class="hidden lg:flex space-x-8 text-sm text-db-primary-light">
+          <a
+            href="#hero"
+            class="hover:text-db-primary-dark transition duration-300 relative group py-2"
+          >
+            Home
+            <span
+              class="absolute bottom-0 left-0 h-1 bg-gradient-to-r from-db-gradient-start to-db-gradient-end w-0 group-hover:w-full transition-all duration-300"
+            ></span>
+          </a>
+          <a
+            href="#about"
+            class="hover:text-db-primary-dark transition duration-300 relative group py-2"
+          >
+            About
+            <span
+              class="absolute bottom-0 left-0 h-1 bg-gradient-to-r from-db-gradient-start to-db-gradient-end w-0 group-hover:w-full transition-all duration-300"
+            ></span>
+          </a>
+          <a
+            href="#contact"
+            class="hover:text-db-primary-dark transition duration-300 relative group py-2"
+          >
+            Contact
+            <span
+              class="absolute bottom-0 left-0 h-1 bg-gradient-to-r from-db-gradient-start to-db-gradient-end w-0 group-hover:w-full transition-all duration-300"
+            ></span>
+          </a>
+          <a
+            href="#blog"
+            class="hover:text-db-primary-dark transition duration-300 relative group py-2"
+          >
+            Blog
+            <span
+              class="absolute bottom-0 left-0 h-1 bg-gradient-to-r from-db-gradient-start to-db-gradient-end w-0 group-hover:w-full transition-all duration-300"
+            ></span>
+          </a>
+          <a
+            href="#careers"
+            class="hover:text-db-primary-dark transition duration-300 relative group py-2"
+          >
+            Careers
+            <span
+              class="absolute bottom-0 left-0 h-1 bg-gradient-to-r from-db-gradient-start to-db-gradient-end w-0 group-hover:w-full transition-all duration-300"
+            ></span>
+          </a>
+        </div>
+
+        <button
+          class="hidden lg:block bg-db-gradient-start text-white text-sm font-semibold px-8 py-3 rounded-full hover:opacity-75 transition duration-300 shadow-lg shadow-db-gradient-start/50"
+        >
+          Request Invite
+        </button>
+
+        <button id="menu-toggle" class="lg:hidden z-50 focus:outline-none p-2">
+          <svg
+            id="icon-hamburger"
+            class="w-6 h-6 text-db-primary-dark"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+          <svg
+            id="icon-close"
+            class="w-6 h-6 text-db-primary-dark hidden"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            ></path>
+          </svg>
+        </button>
+      </nav>
+
+      <div
+        id="mobile-menu"
+        class="hidden absolute top-20 left-6 right-6 p-8 bg-white rounded-lg shadow-xl text-center lg:hidden z-40 transition-transform duration-300 ease-in-out"
+      >
+        <a
+          href="#hero"
+          class="block py-2 text-db-primary-dark hover:text-db-accent-cyan font-medium transition duration-300"
+          >Home</a
+        >
+        <a
+          href="#about"
+          class="block py-2 text-db-primary-dark hover:text-db-accent-cyan font-medium transition duration-300"
+          >About</a
+        >
+        <a
+          href="#contact"
+          class="block py-2 text-db-primary-dark hover:text-db-accent-cyan font-medium transition duration-300"
+          >Contact</a
+        >
+        <a
+          href="#blog"
+          class="block py-2 text-db-primary-dark hover:text-db-accent-cyan font-medium transition duration-300"
+          >Blog</a
+        >
+        <a
+          href="#careers"
+          class="block py-2 text-db-primary-dark hover:text-db-accent-cyan font-medium transition duration-300"
+          >Careers</a
+        >
+      </div>
+    </header>
+    <main>
+      <section
+        id="hero"
+        class="relative overflow-hidden pt-20 lg:pt-0 pb-16 lg:pb-0 bg-db-very-light-gray lg:bg-white"
+      >
+        <div
+          class="container mx-auto px-6 lg:px-12 flex flex-col lg:flex-row-reverse items-center min-h-screen-minus-header"
+        >
+          <div
+            class="relative w-full lg:w-hero-clip z-10 -mb-48 lg:-mb-0  lg:h-screen  pt-8"
+          >
+            <div
+              class="absolute top-0 left-0 w-screen  lg:-left-40 lg:-top-20"
+            >
+                <img src="./img/bg-intro-desktop.svg" alt="" class="hidden lg:block ">
+                <img src="./img/bg-intro-mobile.svg" alt="" class="lg:hidden w-full">
+            </div>
+
+            <div
+              class="relative w-full max-w-sm lg:max-w-none lg:absolute"
+            >
+              <img
+                src="./img/image-mockups.png"
+                alt=""
+                class="w-full  -mt-20 "
+              />
+            </div>
+          </div>
+
+          <div
+            class="w-full lg:w-hero-clip z-30 text-center lg:text-left pt-12 lg:pt-0 lg:pr-12 mt-48 lg:mt-0"
+          >
+            <h1
+              class="text-4xl md:text-5xl lg:text-6xl font-light leading-tight mb-6 text-db-accent-cyan"
+            >
+              Next generation <br class=" lg:block" />
+              digital banking
+            </h1>
+            <p class="text-db-primary-light text-lg mb-8">
+              Take your financial life online. Your Digitalbank account will be
+              a one-stop-shop for spending, saving, budgeting, investing, and
+              much more.
+            </p>
+            <button
+              class="bg-db-accent-lime text-white text-base font-semibold px-10 py-4 rounded-full hover:opacity-75 transition duration-300 shadow-lg shadow-db-gradient-start/50"
+            >
+              Request Invite
+            </button>
+          </div>
+        </div>
+      </section>
+      <hr class="border-0" />
+
+      <section id="about" class="py-20 lg:py-32 bg-db-grayish-blue">
+        <div class="container mx-auto px-6 lg:px-12">
+          <div class="text-center lg:text-left mb-16 lg:mb-20">
+            <h2 class="text-3xl md:text-4xl font-light mb-4">
+              Why choose Digitalbank?
+            </h2>
+            <p class="text-db-primary-light text-lg max-w-xl mx-auto lg:mx-0">
+              We leverage Open Banking to turn your bank account into your
+              financial hub. Control your finances like never before.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+            <div class="text-center lg:text-left">
+              <div
+                class="mb-6 mx-auto lg:mx-0 w-16 h-16 bg-db-gradient-start/10 rounded-full flex items-center justify-center"
+              >
+                <img src="./img/icon-online.svg" alt="">
+              </div>
+              <h3 class="text-xl font-light mb-4">Online Banking</h3>
+              <p class="text-db-primary-light text-base">
+                Our modern web and mobile applications allow you to keep track
+                of your finances wherever you are in the world.
+              </p>
+            </div>
+
+            <div class="text-center lg:text-left">
+              <div
+                class="mb-6 mx-auto lg:mx-0 w-16 h-16 bg-db-gradient-start/10 rounded-full flex items-center justify-center"
+              >
+                <img src="./img/icon-budgeting.svg" alt="">
+              </div>
+              <h3 class="text-xl font-light mb-4">Simple Budgeting</h3>
+              <p class="text-db-primary-light text-base">
+                See exactly where your money goes each month. Receive
+                notifications when you're close to hitting your limits.
+              </p>
+            </div>
+
+            <div class="text-center lg:text-left">
+              <div
+                class="mb-6 mx-auto lg:mx-0 w-16 h-16 bg-db-gradient-start/10 rounded-full flex items-center justify-center"
+              >
+               <img src="./img/icon-onboarding.svg" alt="">
+              </div>
+              <h3 class="text-xl font-light mb-4">Fast Onboarding</h3>
+              <p class="text-db-primary-light text-base">
+                We don't do branches. Open your account in minutes online and
+                start taking control of your finances right away.
+              </p>
+            </div>
+
+            <div class="text-center lg:text-left">
+              <div
+                class="mb-6 mx-auto lg:mx-0 w-16 h-16 bg-db-gradient-start/10 rounded-full flex items-center justify-center"
+              >
+                <img src="./img/icon-api.svg" alt="">
+              </div>
+              <h3 class="text-xl font-light mb-4">Open API</h3>
+              <p class="text-db-primary-light text-base">
+                Manage your savings, investments, pension, and much more from
+                one account. Third-party your money has never been easier.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr class="border-0" />
+
+      <section id="blog" class="py-20 lg:py-32 bg-db-very-light-gray">
+        <div class="container mx-auto px-6 lg:px-12">
+          <h2
+            class="text-3xl md:text-4xl font-light mb-12 lg:mb-16 text-center lg:text-left"
+          >
+            Latest Articles
+          </h2>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div
+              class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300"
+            >
+              <img
+                src="./img/image-currency.jpg"
+                alt=""
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-6">
+                <p class="text-xs text-db-primary-light mb-2">
+                  By Claire Robinson
+                </p>
+                <h4
+                  class="text-lg font-light mb-3 hover:text-db-accent-cyan cursor-pointer transition duration-300"
+                >
+                  Receive money in any currency with no fees
+                </h4>
+                <p class="text-sm text-db-primary-light">
+                  The world is getting smaller and we're becoming more mobile.
+                  So why should you be forced to only receive money in a
+                  single...
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300"
+            >
+              <img
+                src="./img/image-restaurant.jpg"
+                alt=""
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-6">
+                <p class="text-xs text-db-primary-light mb-2">
+                  By Wilson Hutton
+                </p>
+                <h4
+                  class="text-lg font-light mb-3 hover:text-db-accent-cyan cursor-pointer transition duration-300"
+                >
+                  Treat yourself without worrying about money
+                </h4>
+                <p class="text-sm text-db-primary-light">
+                  Our simple budgeting feature allows you to separate out your
+                  spending and set realistic limits each month. That means
+                  you...
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300"
+            >
+              <img
+                src="./img/image-plane.jpg"
+                alt="Airplane wing over a cloudscape"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-6">
+                <p class="text-xs text-db-primary-light mb-2">
+                  By Wilson Hutton
+                </p>
+                <h4
+                  class="text-lg font-light mb-3 hover:text-db-accent-cyan cursor-pointer transition duration-300"
+                >
+                  Take your Digitalbank card wherever you go
+                </h4>
+                <p class="text-sm text-db-primary-light">
+                  We want you to enjoy your travels. That's why we don't charge
+                  any fees on purchases while you're abroad. We'll even...
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300"
+            >
+              <img
+                src="./img/image-confetti.jpg"
+                alt="Confetti and festive lights"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-6">
+                <p class="text-xs text-db-primary-light mb-2">
+                  By Claire Robinson
+                </p>
+                <h4
+                  class="text-lg font-light mb-3 hover:text-db-accent-cyan cursor-pointer transition duration-300"
+                >
+                  Our invite-only Beta accounts are now live!
+                </h4>
+                <p class="text-sm text-db-primary-light">
+                  After a lot of hard work by the whole team, we're excited to
+                  launch our closed beta. It's easy to request an invite
+                  through...
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-db-primary-dark py-12 lg:py-16" id="contact">
+      <div
+        class="container mx-auto px-6 lg:px-12 flex flex-col lg:flex-row items-center lg:items-start justify-between"
+      >
+        <div class="flex flex-col items-center lg:items-start mb-8 lg:mb-0">
+          <a href="#" class="mb-6">
+            <div class="text-2xl font-bold flex items-center text-white">
+                <img src="./img/logo-light.svg" alt="">
+            </div>
+          </a>
+
+          <div class="flex space-x-3">
+            <a
+              href="#"
+              class="text-white hover:text-db-accent-cyan transition duration-300 w-5 h-5"
+            >
+             <img src="./img/icon-facebook.svg" alt="">
+            </a>
+            <a
+              href="#"
+              class="text-white hover:text-db-accent-cyan transition duration-300 w-5 h-5"
+            >
+              <img src="./img/icon-youtube.svg" alt="">
+            </a>
+            <a
+              href="#"
+              class="text-white hover:text-db-accent-cyan transition duration-300 w-5 h-5"
+            >
+              <img src="./img/icon-twitter.svg" alt="">
+            </a>
+            <a
+              href="#"
+              class="text-white hover:text-db-accent-cyan transition duration-300 w-5 h-5"
+            >
+              <img src="./img/icon-pinterest.svg" alt="">
+            </a>
+            <a
+              href="#"
+              class="text-white hover:text-db-accent-cyan transition duration-300 w-5 h-5"
+            >
+              <img src="./img/icon-instagram.svg" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col lg:flex-row space-y-2 lg:space-y-0 lg:space-x-20 text-center lg:text-left text-white mb-8 lg:mb-0 text-sm"
+        >
+          <div class="flex flex-col space-y-2">
+            <a
+              href="#about"
+              class="hover:text-db-accent-cyan transition duration-300"
+              >About Us</a
+            >
+            <a
+              href="#contact"
+              class="hover:text-db-accent-cyan transition duration-300"
+              >Contact</a
+            >
+            <a
+              href="#blog"
+              class="hover:text-db-accent-cyan transition duration-300"
+              >Blog</a
+            >
+          </div>
+          <div class="flex flex-col space-y-2">
+            <a
+              href="#careers"
+              class="hover:text-db-accent-cyan transition duration-300"
+              >Careers</a
+            >
+            <a
+              href="#support"
+              class="hover:text-db-accent-cyan transition duration-300"
+              >Support</a
+            >
+            <a
+              href="#privacy"
+              class="hover:text-db-accent-cyan transition duration-300"
+              >Privacy Policy</a
+            >
+          </div>
+        </div>
+
+        <div class="flex flex-col items-center lg:items-end space-y-6">
+          <button
+            class="bg-db-gradient-start text-white text-sm font-semibold px-8 py-3 rounded-full hover:opacity-75 transition duration-300 shadow-lg shadow-db-gradient-start/50"
+          >
+            Request Invite
+          </button>
+          <p class="text-xs text-db-primary-light">
+            &copy; Digitalbank. All Rights Reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

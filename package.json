@@ -1,0 +1,18 @@
+{
+  "name": "digitalbank-landing-page",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "npx tailwindcss-cli@latest build css/tailwind.css -o dist/css/styles.css"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^2.2.19"
+  }
+}
