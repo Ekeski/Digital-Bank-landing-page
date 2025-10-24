@@ -12,18 +12,17 @@ module.exports = {
         "db-gradient-end": "#2BB7DA",
         "db-very-light-gray": "#FAFAFA",
         "db-grayish-blue": "#F4F5F7",
-        "db-cta-gradient":  "linear-gradient(to right, var(--tw-color-db-gradient-start), var(--tw-color-db-gradient-end))",
       },
       fontFamily: {
         // Assuming a clean, modern sans-serif, let's use a standard stack
         sans: ["Public Sans", "Arial", "sans-serif"],
       },
-      backgroundImage: {
-        "hero-desktop": "url('./images/bg-intro-desktop.svg')",
-        "hero-mobile": "url('./images/bg-intro-mobile.svg')",
+      // backgroundImage: {
+      //   "hero-desktop": "url('./images/bg-intro-desktop.svg')",
+      //   "hero-mobile": "url('./images/bg-intro-mobile.svg')",
        
          
-      },
+      // },
       spacing: {
         "hero-clip": "50%", // For the specific image alignment
       },
